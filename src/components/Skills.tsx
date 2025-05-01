@@ -2,35 +2,39 @@ export default function Skills() {
   const skillCategories = [
     {
       title: 'Frontend',
-      skills: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'HTML/CSS']
+      skills: ['React', 'Phoenix LiveView', 'Next.js', 'TypeScript', 'Tailwind CSS']
     },
     {
       title: 'Backend',
-      skills: ['Node.js', 'Express', 'Python', 'Django', 'REST APIs']
+      skills: ['Node.js', 'Python', 'Django', 'GraphQL', 'Elixir']
     },
     {
       title: 'Database',
-      skills: ['MongoDB', 'PostgreSQL', 'MySQL', 'Redis']
+      skills: [ 'PostgreSQL', 'MongoDB', 'PG Admin']
     },
     {
       title: 'DevOps & Tools',
-      skills: ['Docker', 'AWS', 'Git', 'CI/CD', 'Linux']
+      skills: ['Docker', 'AWS', 'Git', 'CI/CD']
     }
   ]
 
   return (
-    <section id="skills" className="w-full py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center mb-12">Skills & Technologies</h2>
+    <section id="skills" className="w-full py-16 bg-gradient-to-b from-dark via-dark to-white relative">
+      <div className="absolute inset-0 bg-grid-pattern opacity-[0.02]" />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <h2 className="text-3xl font-bold text-center mb-12 text-white">Skills & Technologies</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {skillCategories.map((category, index) => (
-            <div key={index} className="bg-gray-50 p-6 rounded-lg shadow-lg">
-              <h3 className="text-xl font-semibold mb-4 text-center">{category.title}</h3>
+            <div 
+              key={index} 
+              className="bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-xl transform hover:scale-[1.02] transition-all duration-300"
+            >
+              <h3 className="text-xl font-semibold mb-4 text-center text-primary">{category.title}</h3>
               <ul className="space-y-2">
                 {category.skills.map((skill, skillIndex) => (
                   <li key={skillIndex} className="flex items-center">
-                    <span className="w-2 h-2 bg-blue-600 rounded-full mr-2"></span>
-                    <span className="text-gray-600">{skill}</span>
+                    <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                    <span className="text-gray-700">{skill}</span>
                   </li>
                 ))}
               </ul>
