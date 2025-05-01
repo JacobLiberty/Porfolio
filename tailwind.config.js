@@ -12,7 +12,7 @@ module.exports = {
         primary: '#674D88',
         accent: '#ECAF63',
         dark:  '#131143',
-        light: '#8999A9',
+        light: '#f0f2f7',
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
