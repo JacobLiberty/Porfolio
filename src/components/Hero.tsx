@@ -1,7 +1,6 @@
 'use client'
 
 import HeaderAnimation from '../assets/HeaderAnimation'
-import Divider from './Divider'
 import Typewriter from 'typewriter-effect'
 
 export default function Hero() {
@@ -44,7 +43,7 @@ export default function Hero() {
       </div>
       <a 
         href="#about" 
-        className="absolute bottom-20 left-1/2 transform -translate-x-1/2 text-white hover:text-primary transition-colors duration-300"
+        className="absolute bottom-20 left-1/2 transform -translate-x-1/2 text-light hover:text-primary transition-colors duration-300"
         aria-label="Scroll to About section"
       >
         <svg 
@@ -62,7 +61,6 @@ export default function Hero() {
           />
         </svg>
       </a>
-      <Divider className="absolute bottom-[-5px] left-0 rotate-180" fillColor="white" />
     </section>
   )
 } 

@@ -69,4 +69,19 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #4A3563;
+}
+
+/* Add natural border animation */
+@keyframes draw {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-draw {
+  stroke-dasharray: 1000;
+  animation: draw 2s ease-out forwards;
 } 

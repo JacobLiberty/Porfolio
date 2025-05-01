@@ -1,56 +1,68 @@
 export default function Projects() {
-  const projects = [
-    {
-      title: 'E-commerce Platform',
-      description: 'A full-stack e-commerce platform with real-time inventory management and payment processing.',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      link: '#'
-    },
-    {
-      title: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates and team features.',
-      technologies: ['Next.js', 'TypeScript', 'Firebase', 'Tailwind CSS'],
-      link: '#'
-    },
-    {
-      title: 'Data Analytics Dashboard',
-      description: 'An interactive dashboard for visualizing and analyzing complex data sets.',
-      technologies: ['Python', 'Django', 'D3.js', 'PostgreSQL'],
-      link: '#'
-    }
-  ]
+  const project = {
+    title: 'Typetastic',
+    description: 'A WIP modern typing speed and accuracy testing platform that generates unique tests for practice. Features include real-time performance metrics, customizable test durations, and detailed analytics to track your progress.',
+    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+    features: [
+      'Unique test generation for varied practice',
+      'Real-time typing performance metrics',
+      'Customizable test durations',
+      'Detailed progress analytics',
+      'Modern, responsive design'
+    ]
+  }
 
   return (
-    <section id="projects" className="w-full py-16 bg-white">
+    <section id="projects" className="w-full py-16  bg-light">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center mb-12">Featured Projects</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                <p className="text-gray-600 mb-4">
-                  {project.description}
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.technologies.map((tech, techIndex) => (
-                    <span key={techIndex} className="bg-gray-100 px-3 py-1 rounded-full text-sm">
-                      {tech}
-                    </span>
+        <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Featured Project</h2>
+        <div className="flex justify-center">
+          <div className="bg-light rounded-xl shadow-lg overflow-hidden max-w-3xl w-full transform hover:scale-[1.02] transition-transform duration-300">
+            <div className="p-8">
+              <h3 className="text-2xl font-bold mb-4 text-gray-800">{project.title}</h3>
+              <p className="text-gray-600 mb-6">
+                {project.description}
+              </p>
+              <div className="mb-6">
+                <h4 className="text-lg font-semibold mb-3 text-gray-700">Key Features</h4>
+                <ul className="list-disc list-inside space-y-2 text-gray-600">
+                  {project.features.map((feature, index) => (
+                    <li key={index}>{feature}</li>
                   ))}
-                </div>
+                </ul>
+              </div>
+              <div className="flex flex-wrap gap-2 mb-6">
+                {project.technologies.map((tech, index) => (
+                  <span 
+                    key={index} 
+                    className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              <div className="flex gap-4">
                 <a
-                  href={project.link}
-                  className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center"
+                  href="#"
+                  className="bg-primary text-light px-6 py-2 rounded-lg font-medium hover:bg-primary/90 transition-colors duration-300 inline-flex items-center"
                 >
                   View Project
-                  <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  className="text-primary hover:text-primary/80 font-medium inline-flex items-center"
+                >
+                  View Source
+                  <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                   </svg>
                 </a>
               </div>
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </section>

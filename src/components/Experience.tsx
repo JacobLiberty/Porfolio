@@ -1,21 +1,21 @@
 'use client'
 
-import Divider from './Divider'
 import CodingAnimation from '@/assets/CodingAnimation'
 
 export default function Experience() {
   return (
     <section id="experience" className="w-full py-16 bg-dark relative overflow-hidden">
-      <Divider className="absolute top-0 left-0 w-full" fillColor="white" />
+      <div className="absolute top-0 left-0 right-0 w-full">
+      </div>
       <div className="absolute inset-0 bg-grid-pattern opacity-[0.02]" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <h2 className="text-3xl font-bold text-white text-center mb-8 mt-8">Experience</h2>
+        <h2 className="text-3xl font-bold text-accent text-center mb-8 mt-8">Experience</h2>
         <div className="grid gap-6">
           <div className="grid md:grid-cols-2 gap-6 items-center">
             <div className="hidden md:flex items-center">
               <CodingAnimation />
             </div>
-            <div className="bg-white rounded-2xl shadow-xl p-6 transform hover:scale-[1.02] transition-transform duration-300 animate-fade-in">
+            <div className="bg-light rounded-2xl shadow-xl p-6 transform hover:scale-[1.02] transition-transform duration-300 animate-fade-in">
               <div className="flex flex-col h-full">
                 <div className="relative pl-6 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-primary before:rounded-full">
                   <h4 className="font-semibold text-xl text-gray-900">Software Engineer at ReturnBear</h4>
@@ -40,7 +40,7 @@ export default function Experience() {
             </div>
           </div>
           <div className="grid md:grid-cols-2 gap-6 items-stretch">
-            <div className="bg-white rounded-2xl shadow-xl p-6 transform hover:scale-[1.02] transition-transform duration-300 animate-fade-in">
+            <div className="bg-light rounded-2xl shadow-xl p-6 transform hover:scale-[1.02] transition-transform duration-300 animate-fade-in">
               <div className="flex flex-col h-full">
                 <div className="relative pl-6 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-primary before:rounded-full">
                   <h4 className="font-semibold text-xl text-gray-900">Learning Assistant at EdX (Previously Trilogy Education)</h4>
@@ -59,7 +59,7 @@ export default function Experience() {
                 </ul>
               </div>
             </div>
-            <div className="bg-white rounded-2xl shadow-xl p-6 transform hover:scale-[1.02] transition-transform duration-300 animate-fade-in">
+            <div className="bg-light rounded-2xl shadow-xl p-6 transform hover:scale-[1.02] transition-transform duration-300 animate-fade-in">
               <div className="flex flex-col h-full">
                 <div className="relative pl-6 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-primary before:rounded-full">
                   <h4 className="font-semibold text-xl text-gray-900">Computer Network Technician at You.i TV</h4>
