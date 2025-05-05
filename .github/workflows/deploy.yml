@@ -24,7 +24,9 @@ jobs:
         run: npm install --legacy-peer-deps
 
       - name: Build
-        run: npm run build
+        run: |
+          npm run build
+          touch out/.nojekyll
         env:
           NEXT_PUBLIC_BASE_PATH: '/portfolio'
 
