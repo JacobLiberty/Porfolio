@@ -43,6 +43,8 @@ jobs:
           BASE_PATH: '/portfolio'
           ASSET_PREFIX: '/portfolio'
           NODE_ENV: 'production'
+          EMAIL_USER: ${{ secrets.EMAIL_USER }}
+          EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
