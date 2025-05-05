@@ -23,13 +23,15 @@ jobs:
       - name: Install Dependencies
         run: npm install --legacy-peer-deps
 
-      - name: Build
+      - name: Export Static Site
         run: |
           npm run build
           touch out/.nojekyll
-          cp -r public/* out/
+          cp -r public/* out/ || true
         env:
           NEXT_PUBLIC_BASE_PATH: '/portfolio'
+          BASE_PATH: '/portfolio'
+          ASSET_PREFIX: '/portfolio'
           NODE_ENV: 'production'
 
       - name: Deploy
