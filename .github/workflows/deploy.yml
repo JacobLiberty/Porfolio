@@ -25,10 +25,19 @@ jobs:
 
       - name: Export Static Site
         run: |
+          # Clean the output directory
+          rm -rf out
+          # Build the site
           npm run build
+          # Create .nojekyll file
           touch out/.nojekyll
+          # Copy public assets
           cp -r public/* out/ || true
+          # Create 404.html for better routing
           cp out/index.html out/404.html
+          # Ensure all static files are in the correct location
+          mkdir -p out/_next/static
+          cp -r .next/static/* out/_next/static/ || true
         env:
           NEXT_PUBLIC_BASE_PATH: '/portfolio'
           BASE_PATH: '/portfolio'

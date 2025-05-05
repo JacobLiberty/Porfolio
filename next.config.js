@@ -15,6 +15,10 @@ const nextConfig = {
   basePath,
   assetPrefix,
   trailingSlash: true,
+  distDir: 'out',
+  images: {
+    unoptimized: true,
+  },
 };
 
 module.exports = nextConfig; 
