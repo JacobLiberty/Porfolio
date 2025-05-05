@@ -1,33 +1,7 @@
 export default function About() {
   return (
     <section id="about" className="w-full py-20 bg-dark relative">
-      <div className="relative mx-auto max-w-[90%]">
-        {/* Organic border shape */}
-        <div className="absolute inset-0 w-full h-full">
-          <svg
-            viewBox="0 0 1000 600"
-            className="w-full h-full"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M60,0 
-                 Q30,0 30,60
-                 L30,540
-                 Q30,600 60,600
-                 L940,600
-                 Q970,600 970,540
-                 L970,60
-                 Q970,0 940,0
-                 Z"
-              className="fill-light"
-              style={{
-                filter: 'drop-shadow(0 0 10px rgba(0,0,0,0.1))'
-              }}
-            />
-          </svg>
-        </div>
-
-        {/* Content */}
+      <div className="relative mx-auto rounded-2xl max-w-[90%]">
         <div className="relative max-w-7xl mx-auto px-8 py-16 sm:px-12">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative w-full rounded-2xl overflow-hidden group">
