@@ -32,7 +32,7 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative w-full aspect-square rounded-2xl overflow-hidden group">
               <img 
-                src="/headshot.jpg" 
+                src="/portfolio/headshot.jpg" 
                 alt="Professional headshot" 
                 className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-300"
               />
