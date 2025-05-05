@@ -1,10 +1,10 @@
 export default function About() {
   return (
-    <section id="about" className="w-full py-20 bg-dark relative">
+    <section id="about" className="w-full py-20 relative">
       <div className="relative mx-auto rounded-2xl max-w-[90%]">
         <div className="relative max-w-7xl mx-auto px-8 py-16 sm:px-12">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="relative w-full rounded-2xl overflow-hidden group bg-light">
+          <div className="grid md:grid-cols-2 gap-12 items-center rounded-2xl bg-light">
+            <div className="relative w-full overflow-hidden group ">
               <img 
                 src="/portfolio/headshot.jpg" 
                 alt="Professional headshot" 
