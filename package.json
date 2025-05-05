@@ -6,9 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "static": "next build && next export && touch ./out/.nojekyll && echo 'jacobliberty.github.io' > ./out/CNAME",
     "lint": "next lint",
     "export": "next build",
-    "deploy": "gh-pages -d out"
+    "deploy": "gh-pages -d out -t true"
   },
   "dependencies": {
     "@svgr/webpack": "^8.1.0",

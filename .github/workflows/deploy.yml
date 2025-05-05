@@ -28,9 +28,7 @@ jobs:
           # Clean the output directory
           rm -rf out
           # Build the site
-          npm run build
-          # Create .nojekyll file
-          touch out/.nojekyll
+          npm run static && npm run deploy
           # Copy public assets
           cp -r public/* out/ || true
           # Create 404.html for better routing
