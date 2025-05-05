@@ -5,20 +5,17 @@ const assetPrefix = process.env.NEXT_PUBLIC_BASE_PATH || process.env.ASSET_PREFI
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  output: 'export',
+  basePath,
+  assetPrefix,
+  trailingSlash: true,
   images: {
     unoptimized: true,
     dangerouslyAllowSVG: true,
     contentDispositionType: 'attachment',
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
-  output: 'export',
-  basePath,
-  assetPrefix,
-  trailingSlash: true,
   distDir: 'out',
-  images: {
-    unoptimized: true,
-  },
 };
 
 module.exports = nextConfig; 

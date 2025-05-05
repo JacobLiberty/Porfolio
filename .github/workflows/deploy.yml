@@ -38,6 +38,8 @@ jobs:
           # Ensure all static files are in the correct location
           mkdir -p out/_next/static
           cp -r .next/static/* out/_next/static/ || true
+          # Copy any additional static files
+          cp -r .next/standalone/* out/ || true
         env:
           NEXT_PUBLIC_BASE_PATH: '/portfolio'
           BASE_PATH: '/portfolio'
