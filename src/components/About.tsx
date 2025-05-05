@@ -30,7 +30,7 @@ export default function About() {
         {/* Content */}
         <div className="relative max-w-7xl mx-auto px-8 py-16 sm:px-12">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="relative w-full aspect-square rounded-2xl overflow-hidden group">
+            <div className="relative w-full rounded-2xl overflow-hidden group">
               <img 
                 src="/portfolio/headshot.jpg" 
                 alt="Professional headshot" 

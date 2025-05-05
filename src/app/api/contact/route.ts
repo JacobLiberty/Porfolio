@@ -6,7 +6,7 @@ export async function POST(request: Request) {
     const { name, email, message } = await request.json()
 
     // Validate environment variables
-    const emailUser = process.env.EMAIL_USER
+    const emailUser = process.env.EMAIL_USER 
     const emailPass = process.env.EMAIL_PASS
 
     if (!emailUser || !emailPass) {
