@@ -50,7 +50,7 @@ export default function Projects() {
 
                 </div>
                 <img 
-                    src="/portfolio/typetastic.png" 
+                    src="/portfolio/typetastic-screenshot.png" 
                     alt="Typetastic Screenshot" 
                     className="w-1/3 h-1/3 rounded-lg shadow-md object-cover"
                   />
