@@ -13,60 +13,6 @@ export default function Contact() {
             <ChatMessageAnimation />
           </div>
         </div>
-        <div className="space-y-8 w-1/2 mx-auto">
-          <form
-            action="mailto:jacob.tobin.liberty@gmail.com"
-            method="POST"
-            encType="text/plain"
-            className="space-y-6"
-          >
-            <div>
-              <label htmlFor="name" className="block text-sm font-medium text-text mb-2">
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                placeholder="Your name"
-                className="w-full px-4 py-3 rounded-lg bg-dark-light border border-dark-lighter text-text placeholder-text/50 focus:outline-none focus:ring-2 focus:ring-primary transition-all"
-              />
-            </div>
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium text-text mb-2">
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                placeholder="your.email@example.com"
-                className="w-full px-4 py-3 rounded-lg bg-dark-light border border-dark-lighter text-text placeholder-text/50 focus:outline-none focus:ring-2 focus:ring-primary transition-all"
-              />
-            </div>
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium text-text mb-2">
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                required
-                rows={4}
-                placeholder="Your message"
-                className="w-full px-4 py-3 rounded-lg bg-dark-light border border-dark-lighter text-text placeholder-text/50 focus:outline-none focus:ring-2 focus:ring-primary transition-all resize-none"
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full bg-primary text-text py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors duration-300"
-            >
-              Send Message
-            </button>
-          </form>
-        </div>
         <div className="flex justify-center space-x-8 pt-8">
           <a
             href="https://www.linkedin.com/in/jacobtliberty/"
