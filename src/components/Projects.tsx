@@ -5,9 +5,10 @@ export default function Projects() {
     technologies: ['Next.js', 'TypeScript', 'Tailwind CSS'],
     features: [
       'Unique test generation for varied practice',
-      'Real-time typing performance metrics',
+      'Real-time typing performance and accuracy metrics',
       'Customizable test durations',
       'Customizable text generation',
+      'Responsive modern design'
     ],
     repo: 'https://github.com/JacobLiberty/typetastic',
     live: 'https://jacobliberty.github.io/typetastic/'
